@@ -1,9 +1,13 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import Header from '../components/Header'
 
 const Home = () => {
     return (
         <div>
-            <h1> Hello from Home page </h1>
+            <Header title="Food Recipes">
+                <NavLink to="/recipes" className="btn btn-secondary"> Search Recipes </NavLink>
+            </Header>
         </div>
     )
 }
